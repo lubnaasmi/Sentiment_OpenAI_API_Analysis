@@ -5,8 +5,12 @@ new_list = []
 
 def get_sentiment(text: list) -> list:
     
-    
     """
+    This function will interface with the gpt-4o-mini language model.
+
+    Args : list of string reviews
+        
+    Returns : list of sentiment
     
     """
 
