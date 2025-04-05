@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 def make_plot(sentiments: list) -> list:
     """
     Function to plot how frequent different sentiment occurs.
-    Args : list of sentiments eg, ['positive','negative','neutral']
-    Return : list of each sentiment occured eg,[30,9,0]
+    Args : list of sentiments. eg, ['positive','negative','neutral']
+    Return : list of each sentiment occured. eg,[30,9,0]
 
     """
     pos = 0
@@ -22,7 +22,7 @@ def make_plot(sentiments: list) -> list:
             neu += 1
         else:
             irr += 1
-    return(pos,neg,neu,irr)
+    return [pos,neg,neu,irr]
 
 
 
