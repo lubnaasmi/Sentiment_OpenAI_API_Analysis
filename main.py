@@ -6,15 +6,15 @@ import json
 
 def run(filepath: str):
     """
-    INSERT DOCSTRING HERE
+    Function to extract the reviews from json file  
+    Args : filepath
+    Return: the list of sentiments you've generated from your OpenAI API.
     """
-    # open the json object
+    
     with open (filepath) as j:
         data = json.load(j)
         
-    # extract the reviews from the json file
     data['results']
-
 
     # get a list of sentiments for each line using get_sentiment
     final_result = get_sentiment(data['results'])
@@ -22,7 +22,7 @@ def run(filepath: str):
     # plot a visualization expressing sentiment ratio
     make_plot(final_result)
 
-    # return sentiments
+
     return(final_result)
 
 
