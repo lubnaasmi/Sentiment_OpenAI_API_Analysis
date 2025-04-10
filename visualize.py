@@ -8,6 +8,10 @@ def make_plot(sentiments: list) -> list:
     Return : list of each sentiment occured. eg,[30,9,0]
 
     """
+    plt.hist(sentiments)
+    plt.title("Sentiment Analysis")
+    plt.savefig('/Users/lubna/Documents/TKH_Labs/review-process/images/')
+    
     pos = 0
     neg = 0
     neu = 0
@@ -22,7 +26,9 @@ def make_plot(sentiments: list) -> list:
             neu += 1
         else:
             irr += 1
-    return [pos,neg,neu,irr]
+    return [pos, neg, neu, irr]
+
+
 
 
 
