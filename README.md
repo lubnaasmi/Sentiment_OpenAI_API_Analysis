@@ -5,22 +5,24 @@ Welcome to my TLAB submission for sentiment analysis using the OpenAI API! This 
 
 ### Datasets
 Company has provided you with a sample of real-world reviews that they've received from customers from 1999-2012 on coconut water. These reviews are listed in the JSON file labeled `reviews.json`.
-Your company has also provided you an API key to interface with this API. 
+Company has also provided you an API key to interface with this API. 
 
 ### Objective
 
 The goal of this project was to:
 
 Load a set of product reviews from a JSON file.
+
 Use the OpenAI GPT-4o API to classify each review's sentiment.
+
 Plot the distribution of sentiments (positive, negative, neutral, irrelevant).
+
 Practice modular function design and AI prompt engineering.
 
 
 
 ### How to Run
 
-To work on this project you must first configure your `ds` conda environment by following the listed steps below. By the end of these steps, you will have a functioning environment that contains your hidden API key. Please follow these instructions closely or your project will not function correctly.
 
 1) Activate your conda environment via the following terminal command:
 ```bash
