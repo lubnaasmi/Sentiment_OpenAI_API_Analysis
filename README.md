@@ -4,7 +4,7 @@
 Welcome to my TLAB submission for sentiment analysis using the OpenAI API! This project walks through extracting product reviews, analyzing sentiment, and visualizing the results, all built as part of our TLAB assignment.
 
 ### Datasets
-Your company has provided you with a sample of real-world reviews that they've received from customers from 1999-2012 on coconut water. These reviews are listed in the JSON file labeled `reviews.json`.
+Company has provided you with a sample of real-world reviews that they've received from customers from 1999-2012 on coconut water. These reviews are listed in the JSON file labeled `reviews.json`.
 Your company has also provided you an API key to interface with this API. 
 
 ### Objective
@@ -60,9 +60,12 @@ My bar charts seemed to show more than 50 sentiments even though the input only 
 ## Next Steps
 
 Explore line by line sentiment classification by sending each review individually to the API to ensure one response per input.
+
 Add a validation step that compares the number of outputs with the number of inputs and flags inconsistencies.
-Pre-clean reviews to strip any HTML tags or formatting that may confuse the model (e.g., <br> tags).
-Improve prompt engineering further to reinforce structure and response limits. This was due to the model sometimes returning more than one label per review or appending extra lines. Even after refining the prompt in multiple ways, the output count varied (e.g., 52, 54, or 60 labels), which required additional cleanup and stricter output formatting to correct.
+
+Pre-clean reviews to strip any HTML tags or formatting that may confuse the model.
+
+Improve prompt engineering further to reinforce structure and response limits.
 
 
 ## Conclusion
