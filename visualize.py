@@ -5,40 +5,34 @@ def make_plot(sentiments: list) -> list:
     """
     Function to plot how frequent different sentiment occurs.
 
-    Args : list of sentiments. eg, ['positive','negative','neutral']
+    Args : list of sentiments.
 
-    Return : list of each sentiment occured. eg,[30,9,0]
+    Return : list of each sentiment occured.
 
     """
     
-    pos = 0
-    neg = 0
-    neu = 0
-    irr = 0
+    sentiment_counts = [0,0,0,0]
 
     for items in sentiments:
         if items == "positive":
-            pos += 1
+            sentiment_counts[0] += 1
         elif items == 'negative':
-            neg += 1
+            sentiment_counts[1] += 1
         elif items == 'neutral':
-            neu += 1
+            sentiment_counts[2] += 1
         else:
-            irr += 1
+            sentiment_counts[3] += 1
     
     fig,ax = plt.subplots()
     ax.set_title("Sentiment_Analysis")
     ax.set_xlabel("Sentiment")
-    ax.set_ylabel("count")
-    ax.bar(["Positive","Negative","Neutral","Irrelevant"],[pos, neg, neu, irr])
-    fig.savefig("/Users/lubna/Documents/TKH_Labs/review-process/images/sentiment_analysis.png")
+    ax.set_ylabel("Count")
+    ax.bar(["Positive","Negative","Neutral","Irrelevant"],sentiment_counts)
+
+    plt.tight_layout()
+    fig.savefig("images/sentiment_analysis.png")
 
 
-    return [pos, neg, neu, irr]
-
-
-
-
-
+    return sentiment_counts
 
 

@@ -2,7 +2,7 @@
 
 What is the most common sentiment observed in your sample of 50 reviews according to your OpenAI labeled data?
 
-The most common sentiment observed in your sample of 50 reviews according to OpenAI labeled data is negative.
+The most common sentiment observed in your sample of 50 reviews according to OpenAI labeled data is negative.From the gragh plotted, negative sendiments is ~35.
 
 
 ## Question 2
